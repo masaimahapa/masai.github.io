@@ -4,11 +4,11 @@ permalink: /data-science/
 title: "Data Science Posts by Tags"
 author_profile: true
 header:
-    image: "images/data.png"
+    image: "/images/data.png"
 ---
 
 <!-- {% include base_path %} -->
-{% include group-by-array collection=site.posts field="tags" %}
+<!-- {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
@@ -16,4 +16,4 @@ header:
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
-{% endfor %}
+{% endfor %} -->
