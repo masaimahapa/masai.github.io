@@ -115,7 +115,8 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/masaimahapa"
     - label: "CV"
-      icon: "fa fa-file-text"
+      icon: "fab fa-fw fa-file-text"
+      #"fab fa-fw fa-instagram"
       url: "PDFs/Masai_cv.pdf"
 
 # Site Footer
