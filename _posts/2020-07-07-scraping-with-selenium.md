@@ -1,7 +1,7 @@
 ---
 title: "Scraping the web using Selenium"
 date: 2020-07-07
-tags: [data mining, data science, scraping]
+tags: [data science]
 header:
     image: "/images/selenium/scrape.png"
 excerpt: "web scraping, data mining, data science"
