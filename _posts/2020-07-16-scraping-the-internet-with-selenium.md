@@ -35,7 +35,8 @@ You firstly need to get a chromedriver. This is what will allow you to do stuff 
     driver.get('https://klight.co.za/products/all')
 
 ```
-<img src='/images/selenium/klight-all.png'>
+
+![KLight screenshot](/images/selenium/klight-all.png)
 
 Once you have landed on a page, you can now find text, links and images by their id, HTML tag names (e.g p, h1, li), using a [css selector ](https://www.w3schools.com/cssref/css_selectors.asp), etc.
 
