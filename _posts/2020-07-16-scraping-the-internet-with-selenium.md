@@ -7,7 +7,6 @@ header:
 excerpt: "web scraping, data mining, data science"
 ---
 
-# Scraping the internet with Selenium
 A vast majority of the world’s data today is found on the internet. It comes in all sorts of different forms, shapes and sizes available for you to use. Web scraping is like a super power which allows us to get a wealth of data into our hands.
 
 Sometimes, when web pages are dynamically loaded it gets really tricky to scrape websites. For this very reason, Selenium, which automates tasks in the browser can work around this problem with ease compared to other tools like [scrapy](https://scrapy.org/).
@@ -36,10 +35,9 @@ You firstly need to get a chromedriver. This is what will allow you to do stuff 
 
 ```
 
-![KLight screenshot](/images/selenium/klight-all.png)
-![KLight screenshot](/assets/img/klight.png)
+![KLight screenshot](/assets/img/klight.jpg)
 
-<img src="/assets/img/klight.png" alt="">
+<img src="/assets/img/klight.jpg" alt="">
 
 Once you have landed on a page, you can now find text, links and images by their id, HTML tag names (e.g p, h1, li), using a [css selector ](https://www.w3schools.com/cssref/css_selectors.asp), etc.
 
