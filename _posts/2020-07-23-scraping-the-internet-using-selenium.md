@@ -49,7 +49,7 @@ This is what will allow you to automate tasks in the browser. Find a compatible 
     driver.get("https://www.news24.com/")
 ```
 
-![news24 screenshot](https://raw.github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24.png)
+![news24 screenshot](https://github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24.png)
 
 
 ### 4. Get what you need:
@@ -57,7 +57,7 @@ Once you have landed on a page, you can now find text, links and images by their
 
 Right click the element on the website which you would like to scrape. In this case, we want the headlines in the most read container.
 
-![news24 screenshot](https://raw.github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24-inspect.png)
+![news24 inspect](https://raw.github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24-inspect.png)
 
 The headlines are links as seen with the `<a>` tag wrapping them, and they belong to a class called 'most-read-widget__url'. Selenium allows us to select elements by their class. Thats all we have to do for this task. The function returns a list of all the elements matching, which we can loop over and extract the link with the `.get_attribute()` function, passing it `href`. Using `.text` , we can finally extract the text in each element.
 
