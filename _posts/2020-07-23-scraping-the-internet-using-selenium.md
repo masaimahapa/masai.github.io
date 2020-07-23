@@ -39,13 +39,13 @@ For a quick demo, lets get today’s news headlines from the News24 website.
 ```
 
 
-3. Open the web page
+3. Open the web page:
+
 ```python
     from selenium import webdriver
     
-    driver = webdriver.Chrome('/path/to/the/chromedriver')
-    driver.get('https://www.news24.com/')
-
+    driver = webdriver.Chrome("/path/to/the/chromedriver")
+    driver.get("https://www.news24.com/")
 ```
 
 news24:
