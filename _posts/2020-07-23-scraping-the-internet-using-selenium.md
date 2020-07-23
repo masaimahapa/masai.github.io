@@ -30,16 +30,17 @@ After a few minutes of the code running, I had completed my first scrape of a we
 ### How to get started
 For a quick demo, lets get today’s news headlines from the News24 website.
 
-1. You firstly need to get a chromedriver. This is what will allow you to automate tasks in the browser. Find a compatible one for your version of [chrome here.](https://chromedriver.chromium.org/downloads).
+### 1. You firstly need to get a chromedriver:
+This is what will allow you to automate tasks in the browser. Find a compatible one for your version of [chrome here.](https://chromedriver.chromium.org/downloads).
 
-2. Install Selenium in your Python environment.
+### 2. Install Selenium in your Python environment:
 
 ```
     pip install selenium
 ```
 
 
-3. Open the web page:
+### 3. Open the web page:
 
 ```python
     from selenium import webdriver
@@ -48,28 +49,34 @@ For a quick demo, lets get today’s news headlines from the News24 website.
     driver.get("https://www.news24.com/")
 ```
 
-news24:
-![news24 screenshot](/images/selenium/news24.png)
+![news24 screenshot](https://raw.github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24.png)
 
-<img src="/images/selenium/news24.png" alt="">
 
-4. Get what you need
-Once you have landed on a page, you can now find text, links and images by their id, HTML tag names (e.g p, h1, li), using a [css selector ](https://www.w3schools.com/cssref/css_selectors.asp), etc.
+### 4. Get what you need:
+Once you have landed on a page, you can now find text, links and images by their id, HTML tag names (e.g p, h1, a), using a [css selector ](https://www.w3schools.com/cssref/css_selectors.asp), etc.
+
+Right click the element on the website which you would like to scrape. In this case, we want the headlines in the most read container.
+
+![news24 screenshot](https://raw.github.com/masaimahapa/masai.github.io/blob/master/images/selenium/news24-inspect.png)
+
+The headlines are links as seen with the <a> tag wrapping them, and they belong to a class called 'most-read-widget__url'. Selenium allows us to select elements by their class. Thats all we have to do for this task. The function returns a list of all the elements matching, which we can loop over and extract the link with the `.get_attribute()` function, passing it `href`. Using `.text` , we can finally extract the text in each element.
+
 
 ```python
-    #links ('a') inside any div ('div') with a class name of ('most-read-widget__tab')
-    headlines=driver.find_elements_by_css_selector('div.most-read-widget__tab a')
-    
-    for index, title in enumerate(headlines, 1):
-        if title.text:
-            #if the title has text, get the link and text
-            link= title.get_attribute('href')
-            headline= title.text
-            print(index, headline)
-            print(f'link : {link}')
-            print('')
+#all elements of class name 'most-read-widget__url'
+headlines=driver.find_elements_by_css_selector('.most-read-widget__url')
+
+for index, title in enumerate(headlines, 1):
+    if title.text:
+        #if the title has text, get the link and text
+        link= title.get_attribute('href')
+        headline= title.text
+        print(index, headline)
+        print(f'link : {link}')
+        print('')
 
 ```
+
 Output:
 ```
 1 LIVE | All public schools will be shut for 4 weeks
