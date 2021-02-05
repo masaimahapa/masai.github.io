@@ -4,7 +4,7 @@ date: 2020-07-23
 tags: [data science]
 header:
     image: "/images/selenium/scrape.png"
-excerpt: "web scraping, data mining, data science"
+excerpt: "data science"
 ---
 
 This post is targeted to data scientists and software developers thinking about getting started with web scraping.
