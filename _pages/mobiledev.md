@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: tag
 permalink: /mobiledev/
 title: "Mobile Development Posts by Tags"
 author_profile: true
