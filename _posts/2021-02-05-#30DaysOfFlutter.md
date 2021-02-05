@@ -1,7 +1,8 @@
 ---
 title: "30 days of Flutter"
 date: 2021-02-05
-tags: [ mobiledev]
+tags: [ Mobiledev]
+categories : Mobiledev
 header:
    image: "/images/flutter/30daysFlutter.png"
 excerpt: "software development, mobile development"

@@ -1,7 +1,8 @@
 ---
 title: "Scraping the internet using Selenium"
 date: 2020-07-23
-tags: [data science]
+tags: DataScience
+categories : DataScience
 header:
     image: "/images/selenium/scrape.png"
 excerpt: "data science"
